@@ -1,0 +1,10 @@
+<rasty specificationClass="Contable\UI\pages\balances\BalanceDia" templateLocation="pages/balances/BalanceDia.htm"> 
+
+	<param name="layoutType" value="str:ContableMetroLayout" />
+	<param name="strFecha" value="get:fecha" />
+
+	<component id="balance" type="BalanceDia">
+		<param name="fecha" value="fecha" />
+	</component>
+
+</rasty>

@@ -1,0 +1,7 @@
+<rasty specificationClass="Contable\UI\pages\login\Login" templateLocation="pages/login/Login.htm"> 
+
+	<param name="layoutType" value="str:ContableLoginMetroLayout" />
+	<param name="error" value="get:error" />
+
+		
+</rasty>

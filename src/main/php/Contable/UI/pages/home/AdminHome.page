@@ -1,0 +1,12 @@
+<rasty specificationClass="Contable\UI\pages\home\AdminHome" templateLocation="pages/home/AdminHome.htm"> 
+
+	<param name="layoutType" value="str:ContableHomeMetroLayout" />
+
+
+	
+
+	<!-- <component id="ultimosMovimientosCaja" type="UltimosMovimientos">
+		<param name="cuenta" value="caja" />
+	</component> -->
+	
+</rasty>

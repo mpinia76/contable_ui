@@ -1,0 +1,5 @@
+<rasty specificationClass="Contable\UI\components\boxes\banco\BancoBox" templateLocation="BancoBox.htm">
+
+	<param name="bancoOid" value="get:bancoOid" />
+
+</rasty>

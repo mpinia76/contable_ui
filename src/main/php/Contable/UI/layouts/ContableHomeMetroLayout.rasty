@@ -1,0 +1,6 @@
+<rasty specificationClass="Contable\UI\layouts\ContableHomeMetroLayout" templateLocation="ContableHomeMetroLayout.htm">
+
+	<param name="menuGroups" value="menuGroups" />
+	<component id="footer" type="FooterContable">
+	</component>	
+</rasty>

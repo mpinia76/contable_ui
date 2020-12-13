@@ -1,0 +1,236 @@
+<!-- BEGIN: main-->
+<style>
+.totales-data-subtitle{
+	color: inherit;
+    display: block;
+    font-size: 12pt;
+}
+.totales-data-title{
+	color: inherit;
+    display: block;
+    font-size: 14pt;
+    text-align: right;
+    padding: 5px;
+}
+</style>
+<div class="tile-area tile-area-mj" style="width: 1390px;">
+        
+        <h2 class="tile-area-title fg-white">
+        	{app_title} <span class="fg-white">{app_subtitle}</span>
+        </h2>
+        
+        
+        <div class="user-id">
+            
+            <div class="user-id-image">
+                <a href="#" class="icon-user no-display1 dropdown-toggle">
+                </a>
+                <ul data-role="dropdown" class="dropdown-menu place-right" style="display: none;">
+                
+                <!-- BEGIN: menuOptionProfile -->
+		        	<li><a href="#" onclick="{onclick}" ><!-- BEGIN: image --><img style="border:0;margin-right:10px;width:24px;height: 24px;" src="{src}"/><!-- END: image --> {label}</a></li>
+		        <!-- END: menuOptionProfile -->
+                
+                <!-- BEGIN: menuOptionExit -->
+		        	<li><a class="element" href="#" onclick="{onclick}" ><!-- BEGIN: image --><img style="border:0;margin-right:10px;width:24px;height: 24px;" src="{src}"/><!-- END: image -->{label}</a></li>
+		        <!-- END: menuOptionExit -->
+                
+            </ul>
+            </div>
+            <div class="user-id-name">
+                <!-- span class="first-name">{user}</span-->
+                <span class="last-name" >{user}</span>
+            </div>
+            
+        </div>
+
+		
+		
+		
+		<!-- div class="tile-group three">
+            <div class="tile-group-title">{menu_ventas}</div>
+            <a class="tile double double-vertical bg-crimson" href="#">
+                <div class="tile-content email">
+	            	<div class="email-icon">
+	               		<span class="icon-stats-2" style="font-size: 48px;"></span>
+	               	</div>
+	               	
+	               <div class="email-data">
+	                   <span class="totales-data-subtitle">{total_ventas_label}</span>
+	                   <span class="totales-data-title bg-orange">{total_ventas}</span>
+	                   <span class="totales-data-subtitle">{monto_ventas_label}</span>
+	                   <span class="totales-data-title bg-orange">{monto_ventas}</span>
+	                   <span class="totales-data-subtitle">{monto_ventas_mes_label}</span>
+	                   <span class="totales-data-title bg-orange">{monto_ventas_mes}</span>
+	               </div>
+	            </div>
+            </a>
+            <a class="tile  bg-crimson" href="{linkVentas}">
+                <div class="tile-content icon">
+                    <span class="icon-ventas"></span>
+                </div>
+                <div class="brand">
+                    <div class="label">{menu_ventas}</div>
+                </div>
+            </a>
+            <a class="tile  bg-crimson" href="{linkPremios}">
+                <div class="tile-content icon">
+                    <span class="icon-pagoPremios"></span>
+                </div>
+                <div class="brand">
+                    <div class="label">{menu_premios}</div>
+                </div>
+            </a>
+            
+ 			<a class="tile bg-crimson" href="{linkBalanceDia}">
+                <div class="tile-content icon">
+                    <span class="icon-balance-dia"></span>
+                </div>
+                <div class="brand">
+                    <div class="label">{menu_balance_dia}</div>
+                </div>
+            </a>
+            <a class="tile bg-crimson" href="{linkBalanceMes}">
+                <div class="tile-content icon">
+                    <span class="icon-balance-mes"></span>
+                </div>
+                <div class="brand">
+                    <div class="label">{menu_balance_mes}</div>
+                </div>
+            </a>
+            <a class="tile bg-crimson" href="{linkBalanceAnio}">
+                <div class="tile-content icon">
+                    <span class="icon-balance-anio"></span>
+                </div>
+                <div class="brand">
+                    <div class="label">{menu_balance_anio}</div>
+                </div>
+            </a>
+            
+            
+        </div> <-- End group -->
+        
+        <div class="tile-group double">
+            
+            <div class="tile-group-title">{menu_gastos}</div>
+            
+            <a data-effect="slideUp" href="{linkGastos}" data-role="live-tile" class="tile double bg-amber live">
+                <!-- BEGIN:gasto -->
+                <div class="tile-content email">
+                    <div class="email-image">
+                    </div>
+                    <div class="email-data">
+                        <span class="email-data-title">{titulo}</span>
+                        <span class="email-data-subtitle">{subtitulo}</span>
+                        <span class="email-data-text">{descripcion}</span>
+                    </div>
+                </div>
+                <!-- END: gasto -->
+                <!-- BEGIN:sin_gasto -->
+                <div class="tile-content email">
+                    <div class="email-image">
+                    </div>
+                    <div class="email-data">
+                        <span class="email-data-title">{titulo}</span>
+                    </div>
+                </div>
+                <!-- END: sin_gasto -->
+                <div class="brand">
+                    <div class="label"><h3 class="no-margin fg-white"><span class="icon-calendar"></span></h3></div>
+                    <div class="badge bg-red">{total_gastos}</div>
+                    
+                </div>
+            </a> <!-- end tile vencimientos-->
+            <a class="tile bg-amber" href="{linkGastos}">
+                <div class="tile-content icon">
+                    <span class="icon-gastos"></span>
+                </div>
+                <div class="brand">
+                    <div class="label">{menu_gastos}</div>
+                </div>
+            </a><!-- end tile gastos-->
+            <a class="tile  bg-amber" href="{linkGastoAgregar}">
+                <div class="tile-content icon">
+                    <span class="icon-nuevo-gasto"></span>
+                </div>
+                <div class="brand">
+                    <div class="label">{menu_gastos_agregar}</div>
+                </div>
+            </a>
+            
+        </div> <!-- End group -->
+        
+        <div class="tile-group double">
+           <div class="tile-group-title">{menu_cuentas}</div>
+	       <a class="tile double bg-cyan" href="{linkMovimientosBanco}">
+                <div class="tile-content">
+                	<div class="padding10">
+					<h1 class="fg-white ntm">{menu_bancos}</h1>
+					</div>
+                </div>
+                <div class="brand bg-green fg-white" style="text-align: right;">
+					<span class="text" style="font-size:19pt;">
+						{saldo_bancos}
+					</span>
+				</div>
+           </a>
+           <a class="tile bg-cyan" href="{linkMovimientosBanco}">
+                <div class="tile-content">
+                	<div class="padding10">
+					<h1 class="fg-white ntm">{menu_baproctacte}</h1>
+					</div>
+                </div>
+                <div class="brand bg-green fg-white" style="text-align: right;">
+					<span class="text" style="font-size:16pt;">
+						{saldo_baproctate}
+					</span>
+				</div>
+           </a>
+           <a class="tile bg-cyan" href="{linkMovimientosBanco}">
+                <div class="tile-content">
+                	<div class="padding10">
+					<h1 class="fg-white ntm">{menu_aristegui1}</h1>
+					</div>
+                </div>
+                <div class="brand bg-green fg-white" style="text-align: right;">
+					<span class="text" style="font-size:16pt;">
+						{saldo_aristegui1}
+					</span>
+				</div>
+           </a>
+           <a class="tile bg-cyan" href="{linkMovimientosBanco}">
+                <div class="tile-content">
+                	<div class="padding10">
+					<h1 class="fg-white ntm">{menu_baprocajaahorro}</h1>
+					</div>
+                </div>
+                <div class="brand bg-green fg-white" style="text-align: right;">
+					<span class="text" style="font-size:16pt;">
+						{saldo_baprocajaahorro}
+					</span>
+				</div>
+           </a>
+           <a class="tile bg-cyan" href="{linkMovimientosBanco}">
+                <div class="tile-content">
+                	<div class="padding10">
+					<h1 class="fg-white ntm">{menu_aristegui2}</h1>
+					</div>
+                </div>
+                <div class="brand bg-green fg-white" style="text-align: right;">
+					<span class="text" style="font-size:16pt;">
+						{saldo_aristegui2}
+					</span>
+				</div>
+           </a>
+            
+       </div>  
+        
+              
+             
+        
+           
+		
+       
+    
+    </div>
+<!-- END: main-->

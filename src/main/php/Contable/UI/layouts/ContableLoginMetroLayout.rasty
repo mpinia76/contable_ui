@@ -1,0 +1,5 @@
+<rasty specificationClass="Contable\UI\layouts\ContableLoginMetroLayout" templateLocation="ContableLoginMetroLayout.htm">
+<component id="footer" type="FooterContable">
+	</component>
+
+</rasty>
